@@ -8,7 +8,7 @@ guess = 0
 
 while True:
     keyboard.type(f"{guess:04d}")  
-    time.sleep(0.2)  
+    time.sleep(1)  
     keyboard.press(Key.enter)
     keyboard.release(Key.enter)
 
@@ -17,6 +17,7 @@ while True:
     if guess > 9999:
         guess = 0  
 
-    time.sleep(1)  
+    time.sleep(0.2)  
+
 
 
